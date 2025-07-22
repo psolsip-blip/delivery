@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:api": "npm --workspace apps/api run start:dev",
+    "dev:mobile": "npm --workspace apps/mobile run start",
+    "dev:admin": "npm --workspace apps/admin-web run dev",
+    "lint": "eslint . --ext .ts,.tsx",
+    "build": "echo build all"
+  }
+}
